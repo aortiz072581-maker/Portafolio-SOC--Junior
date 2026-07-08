@@ -1,0 +1,2 @@
+# Nmap 7.99 scan initiated Wed Jul  8 07:43:28 2026 as: /data/data/com.termux/files/usr/bin/nmap -sV -oN reporte_nmap.txt 192.168.1.1
+# Nmap done at Wed Jul  8 07:43:31 2026 -- 1 IP address (0 hosts up) scanned in 2.64 seconds

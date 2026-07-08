@@ -1,0 +1,19 @@
+=== REPORTE DE PRUEBA DE PENETRACION ETICA ===
+
+Herramienta: Metasploit Framework
+Objetivo: Maquina Virtual Metasploitable2 - 192.168.1.100
+
+1. RECONOCIMIENTO:
+   comando: nmap -sV 192.168.1.100
+   resultado: Puerto 21 FTP abierto, Puerto 80 HTTP abierto
+
+2. EXPLOTACION:
+   modulo: exploit/unix/ftp/vsftpd_234_backdoor
+   resultado: Acceso obtenido exitosamente
+
+3. RECOMENDACION:
+   Actualizar vsftpd a version 2.3.5 o superior
+   Bloquear puerto 21 en el firewall
+
+CONCLUSION: Vulnerabilidad critica encontrada y documentada.
+

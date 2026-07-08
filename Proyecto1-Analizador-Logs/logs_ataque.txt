@@ -1,0 +1,4 @@
+Apr 7 07:33:01 kali sshd[1234]: Failed password for root from 192.168.1.50 port 22 ssh2
+Apr 7 07:33:03 kali sshd[1235]: Failed password for admin from 192.168.1.50 port 22 ssh2
+Apr 7 07:33:05 kali sshd[1236]: Failed password for root from 192.168.1.50 port 22 ssh2
+Apr 7 07:33:10 kali kernel: [UFW BLOCK] IN=eth0 OUT= MAC= SRC=10.0.0.5 DST=192.168.1.10 LEN=60
