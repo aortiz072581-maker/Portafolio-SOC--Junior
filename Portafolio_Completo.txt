@@ -1,0 +1,55 @@
+ Day1_ Vulnerability_assessment.txt
+3. CONCLUSIONES
+- El host 192.168.1.1 está activo pero con firewall estricto.
+- No se detectaron puertos abiertos en los top 100.
+4. RECOMENDACIONES
+- Mantener el firewall actualizado.
+- Cambiar la contraseña por defecto del router.
+Day3_Malware_Analysis.txt
+# Nmap 7.99 scan initiated Sat Jul 11 01:41:38 2026 as: /data/data/com.termux/files/usr/bin/nmap -sV -Pn --top-ports 100 -oN escaneo_nuevo_2026-07-11_01-41.txt 192.168.1.1
+Nmap scan report for 192.168.1.1
+Host is up (0.39s latency).
+All 100 scanned ports on 192.168.1.1 are in ignored states.
+Not shown: 60 filtered tcp ports (no-response), 40 filtered tcp ports (host-unreach)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jul 11 01:41:53 2026 -- 1 IP address (1 host
+Day 4_5_6_Integrated_SOC_Operations.txt
+========================================
+INTEGRATED SECURITY OPERATIONS REPORT
+SOC Analyst: Anthony Ortiz
+Location: Nosara, Costa Rica
+Date: 11-JUL-2026
+Tools: Termux, Bash, OSINT, Nmap
+========================================
+
+SECTION 1: HONEYPOT DEPLOYMENT & THREAT DETECTION
+Objective: Deploy decoy SSH service to detect attackers
+Findings:
+- Detected 5 brute force attempts on port 2222 in 24h
+- Top Attacker IPs: 185.220.101.12, 45.142.212.99
+- Most used username: admin, root
+Mitigation: Blocked IPs via iptables. Alert threshold set to 3 attempts.
+
+SECTION 2: PHISHING EMAIL ANALYSIS & IOC EXTRACTION
+Objective: Analyze suspicious email: 'Urgent: Invoice.pdf.exe'
+Findings:
+- Malicious Domain: secure-payment-update.com
+- Malicious IP: 185.220.101.45
+- Hash: a1b2c3d4e5f67890 [Simulated]
+- Attack Vector: Credential Harvesting
+Recommendations: Block domain + IP at firewall. User awareness training.
+
+SECTION 3: SECURITY HEALTH DASHBOARD & AUTOMATION
+Objective: Automated daily security status check
+Dashboard Results:
+[OK] Firewall Status: Active
+[ALERT] Failed Logins: 17 in last hour
+[OK] Disk Usage: 42%
+[OK] Critical Services: Running
+Action Taken: Investigated failed logins. Source IP added to blocklist.
+
+OVERALL CONCLUSION:
+Environment shows active scanning and phishing attempts.
+Implemented detection, analysis, and automated response workflows.
+Next Steps: Deploy SIEM for centralized log correlation.
